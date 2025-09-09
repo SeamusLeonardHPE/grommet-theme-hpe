@@ -12,15 +12,15 @@ import {
 } from 'hpe-design-tokens/grommet';
 import { Ascending } from 'grommet-icons/icons/Ascending';
 import { Blank } from 'grommet-icons/icons/Blank';
-import { CircleAlert } from 'grommet-icons/icons/CircleAlert';
+import { Alert } from 'grommet-icons/icons/Alert';
 import { Close } from 'grommet-icons/icons/Close';
 import { Descending } from 'grommet-icons/icons/Descending';
 import { Down } from 'grommet-icons/icons/Down';
-import { Next } from 'grommet-icons/icons/Next';
-import { Previous } from 'grommet-icons/icons/Previous';
+import { Right } from 'grommet-icons/icons/Right';
+import { Left } from 'grommet-icons/icons/Left';
 import { Unsorted } from 'grommet-icons/icons/Unsorted';
 import { Up } from 'grommet-icons/icons/Up';
-import { Hpe } from 'grommet-icons/icons/Hpe';
+// removedGrommetIcon  import { Hpe } from 'grommet-icons/icons/Hpe';
 
 import { backgrounds } from './backgrounds';
 import { colors } from './colors';
@@ -769,12 +769,12 @@ const buildTheme = (tokens, flags) => {
       },
       'cta-primary': {
         ...buttonKindTheme.primary,
-        icon: <Hpe />,
+        // removedGrommetIcon icon: <Hpe />,
         reverse: true,
       },
       'cta-alternate': {
         ...buttonKindTheme.secondary,
-        icon: <Hpe color="brand" />,
+        // removedGrommetIcon  icon: <Hpe color="brand" />,
         reverse: true,
       },
       ...buttonKindTheme,
@@ -965,7 +965,7 @@ const buildTheme = (tokens, flags) => {
         extend: '',
       },
       range: { background: 'background-selected-primary' },
-      icons: { next: Next, previous: Previous },
+      icons: { next: Right, previous: Left },
       small: {
         fontSize: '13.6px',
         lineHeight: 1.375,
@@ -1569,7 +1569,7 @@ const buildTheme = (tokens, flags) => {
         },
         container: { gap: 'xsmall' },
         icon: (
-          <CircleAlert size="small" color={light.hpe.color.icon.critical} />
+          <Alert size="small" color={light.hpe.color.icon.critical} />
         ),
         size: 'xsmall',
         color: components.hpe.formField.default.error.rest.textColor,
